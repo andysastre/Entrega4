@@ -1,0 +1,157 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.App {
+
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+
+
+}
+body{
+  background-image: url(https://assets-blog.hostgator.mx/wp-content/uploads/2019/11/SQL.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+.input-container{
+  width: 400px;
+  margin-left: 40px;
+  padding-right: 50px;
+  height: 300px;
+
+}
+
+.title {
+  color: #ffffff;
+}
+
+.cardUsers{
+  display: inline;
+
+}
+.container{
+  display: flex;
+ gap: 20px;
+flex-wrap: wrap;
+
+}
+
+
+.input {
+  line-height: 28px;
+  border: 2px solid transparent;
+  border-bottom-color: #777;
+  padding: .2rem 0;
+  outline: none;
+  background-color: transparent;
+  color: #0d0c22;
+  transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+ }
+ 
+ .input:focus, input:hover {
+  outline: none;
+  padding: .2rem 1rem;
+  border-radius: 1rem;
+  border-color: #7a9cc6;
+ }
+ 
+ .input::placeholder {
+  color: #777;
+ }
+ 
+ .input:focus::placeholder {
+  opacity: 0;
+  transition: opacity .3s;
+ }
+ 
+
+ .button {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid #4f4f4f;
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  font-size: 13px;
+  color: black;
+  z-index: 1;
+  margin-top: 20px;
+  margin: 10px;
+  
+}
+ 
+ .button:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+ }
+ 
+ .button:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #39bda7;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+ }
+ 
+ .button:hover {
+  color: #ffffff;
+  border: 1px solid #39bda7;
+ }
+ 
+ .button:hover:before {
+  top: -35%;
+  background-color: #39bda7;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+ }
+ 
+ .button:hover:after {
+  top: -45%;
+  background-color: #39bda7;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+ }
+
+ .card {
+  width: 250px;
+  height: 200px;
+  background: rgb(255, 255, 255);
+  border-radius: 0.4em;
+  box-shadow: 0.3em 0.3em 0.7em #00000015;
+  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: rgb(250, 250, 250) 0.2em solid;
+ }
+ 
+ .card:hover {
+  border: #006fff 0.2em solid;
+ }
+
+
+ .icon{
+ width: 40px;
+  font-size: 25px;
+ margin: 10px;
+ }
